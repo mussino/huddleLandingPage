@@ -65,8 +65,9 @@ article {
 }
 article h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
+    font-weight: var(--fw-bold);
 }
 article p {
     color: white;
@@ -78,6 +79,9 @@ button {
     width: 250px;
     padding: 10px 45px;
     border-radius: 40px;
+    box-shadow: 5px 2px 15px;
+    background-color: white;
+    color: var(--clr-primary-violet);
 
     &:hover {
         cursor: pointer;
