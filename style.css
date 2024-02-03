@@ -1,0 +1,106 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body { 
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+li {
+    list-style: none;
+}
+ul {
+    padding: 0;
+}
+:root {
+    --clr-primary-violet: hsl(257, 40%, 49%);
+    --clr-primary-softMagenta: hsl(300, 69%, 71%);
+
+    --ff-heading: 'Poppins', sans-serif;
+    --ff-body: 'Open Sans', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 600;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: var(--ff-body);
+    background-color: var(--clr-primary-violet);
+    background-image: url('./images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow-x: hidden;
+}
+header {
+    margin-bottom: 80px;
+}
+header img {
+    margin-left: 60px;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 60px;
+}
+main img {
+    width: 100%;
+    height: auto;
+}
+article {
+    padding: 40px 50px;
+}
+article h1 {
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+article p {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+button {
+    border: none;
+    width: 250px;
+    padding: 10px 45px;
+    border-radius: 40px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-column: 2 / 2;
+    gap: 20px;
+}
+.fa-brands {
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.fa-facebook-f {
+    padding: 10px 15px;
+}
